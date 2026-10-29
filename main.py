@@ -44,7 +44,12 @@ def get_user_stats():
     return total_users, len(unique_users)
 
 # --- Обработчики команд ---
-async def start(update: Update, context: Application.Context) -> None:
+from telegram import Update
+from telegram.ext import Application, CommandHandler, ContextTypes
+
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    await update.message.reply_text("Привет!")
+
     """Обрабатывает команду /start."""
 
     user = update.effective_user
