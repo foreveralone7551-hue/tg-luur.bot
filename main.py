@@ -73,7 +73,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         reply_markup=ForceReply(selective=True),
     )
 
-async def help_command(update: Update, context: Application.Context) -> None:
+async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Обрабатывает команду /help."""
     await update.message.reply_text("Просто следуй инструкциям в /start, чтобы получить доступ к контенту.")
 
