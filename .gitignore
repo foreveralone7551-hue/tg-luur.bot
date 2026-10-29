@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+*.egg
+*.egg-info/
+dist/
+build/
+# Logs
+*.log
+user_logs.txt # Твой файл с логами пользователей
+# Environment variables
+.env
+# IDE-specific files (e.g., VS Code, PyCharm)
+.vscode/
+.idea/
+# Render.com specific (if any local build artifacts)
+# Usually Render handles its own build process, but good to be safe
+# For example, if you had a local 'output/' directory
+# output/
