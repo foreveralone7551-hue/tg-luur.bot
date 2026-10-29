@@ -3,6 +3,7 @@ import os
 from datetime import datetime
 from telegram import Update, ForceReply
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
+Application.Context = ContextTypes.DEFAULT_TYPE
 
 # Настройка логирования
 logging.basicConfig(
